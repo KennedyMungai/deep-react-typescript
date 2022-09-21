@@ -3,6 +3,7 @@ import React from 'react';
 
 interface ChildProps {
     color: string;
+    onClick: () => void;
 };
 
 export const Child = ({ color, onClick }: ChildProps) => {
