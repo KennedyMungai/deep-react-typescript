@@ -1,6 +1,6 @@
-import React from 'react';
+import ReactDOM from "react-dom";
 
-const index = () => {
+const App = () => {
   return (
     <div>
         <h1>Hi There</h1>
@@ -8,4 +8,6 @@ const index = () => {
   )
 }
 
-export default index;
+ReactDOM.render(
+    <App />, document.querySelector('root')
+);
