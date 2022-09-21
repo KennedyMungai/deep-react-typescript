@@ -5,7 +5,7 @@ interface ChildProps {
     color: string;
 };
 
-export const Child = (props: ChildProps) => {
+export const Child = ({ color }: ChildProps) => {
   return (
     <div>Child</div>
   )
