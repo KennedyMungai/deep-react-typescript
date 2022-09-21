@@ -10,3 +10,7 @@ export const Child = ({ color }: ChildProps) => {
     <div>{color}</div>
   )
 }
+
+export const ChildAsFC:React.FC<ChildProps> = ({color}:ChildProps) => {
+    return <div className="">{color}</div>
+};
