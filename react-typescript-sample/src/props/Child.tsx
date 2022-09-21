@@ -7,6 +7,6 @@ interface ChildProps {
 
 export const Child = ({ color }: ChildProps) => {
   return (
-    <div>Child</div>
+    <div>{color}</div>
   )
 }
