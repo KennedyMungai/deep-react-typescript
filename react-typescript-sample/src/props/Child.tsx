@@ -5,7 +5,7 @@ interface ChildProps {
     color: string;
 };
 
-export const Child = ({ color }: ChildProps) => {
+export const Child = ({ color, onClick }: ChildProps) => {
   return (
     <div>
         {color}
@@ -14,7 +14,7 @@ export const Child = ({ color }: ChildProps) => {
   )
 }
 
-export const ChildAsFC:React.FC<ChildProps> = ({color}:ChildProps) => {
+export const ChildAsFC:React.FC<ChildProps> = ({color, onClick}:ChildProps) => {
     return <div>
         {color}
         <button onClick={onClick}>Click Me!</button> 
