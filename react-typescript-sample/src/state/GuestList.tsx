@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const GuestList = () => {
+const GuestList: React.FC = () => {
   return (
     <div>GuestList</div>
   )
