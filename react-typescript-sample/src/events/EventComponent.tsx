@@ -5,10 +5,17 @@ const EventComponent: React.FC = () => {
     const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         console.log(e);
     }
+
+    const onDragStart = () => {
+        console.log("Drag queens are confusing");
+    };
         
     return (
         <div>
             <input type="text" onChange={onChange} />
+            <div className="" draggable onDragStart={onDragStart}>
+                Drag Me!
+            </div>
         </div>
     )
 }
