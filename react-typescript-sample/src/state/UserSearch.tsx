@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 
-const UserSearch = () => {
+const UserSearch: React.FC = () => {
   return (
     <div>UserSearch</div>
   )
