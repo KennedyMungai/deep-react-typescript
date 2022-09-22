@@ -9,9 +9,12 @@ const users = [
 
 const UserSearch: React.FC = () => {
     const [name, setName] = useState<string>('');
+    const [user, setUser] = useState<{name: string, age: number} | undefined>();
 
     const onClick = () => {
-        
+        const foundUser = users.find((user) => {
+            return user.name === name;
+        });
     };
 
     return (
