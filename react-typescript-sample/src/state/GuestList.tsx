@@ -7,7 +7,7 @@ const GuestList: React.FC = () => {
     return (
         <>
             <h3>Guest List</h3>
-            <input type="text" value={name} onChange={(e) => setName(e.current.value)} />
+            <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
 
             <button>Add Guest</button>
         </>
