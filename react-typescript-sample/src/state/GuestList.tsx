@@ -2,14 +2,16 @@ import React, { useState } from 'react';
 
 
 const GuestList: React.FC = () => {
-  return (
-    <>
-        <h3>Guest List</h3>
-        <input type="text" />
+    const [name, setName] = useState('');
 
-        <button>Add Guest</button>
-    </>
-  )
+    return (
+        <>
+            <h3>Guest List</h3>
+            <input type="text" value={name} onChange={(e) => setName(e.current.value)} />
+
+            <button>Add Guest</button>
+        </>
+    )
 }
 
 export default GuestList;
