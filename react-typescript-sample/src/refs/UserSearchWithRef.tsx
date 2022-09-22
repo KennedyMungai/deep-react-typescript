@@ -10,6 +10,7 @@ const users = [
 const UserSearchWithRef: React.FC = () => {
     const [name, setName] = useState<string>('');
     const [user, setUser] = useState<{name: string, age: number} | undefined>();
+    const inputRef = useRef();
 
     const onClick = () => {
         const foundUser = users.find((user) => {
