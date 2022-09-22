@@ -6,7 +6,7 @@ const EventComponent: React.FC = () => {
         console.log(e);
     }
 
-    const onDragStart = () => {
+    const onDragStart = (e:React.ChangeEvent<HTMLDivElement>) => {
         console.log("Drag queens are confusing");
     };
         
