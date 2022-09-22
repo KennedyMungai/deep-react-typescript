@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const EventComponent = () => {
+const EventComponent: React.FC = () => {
   return (
     <div>EventComponent</div>
   )
