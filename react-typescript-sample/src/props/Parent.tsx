@@ -1,5 +1,5 @@
 import React from 'react';
-import { Child, ChildAsFC } from './Child';
+import { ChildAsFC } from './Child';
 
 
 const Parent = () => {
