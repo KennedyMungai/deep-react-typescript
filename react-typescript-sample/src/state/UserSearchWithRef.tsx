@@ -7,7 +7,7 @@ const users = [
     { name: 'Michael', age: 20 },
 ];
 
-const UserSearch: React.FC = () => {
+const UserSearchWithRef: React.FC = () => {
     const [name, setName] = useState<string>('');
     const [user, setUser] = useState<{name: string, age: number} | undefined>();
 
@@ -32,4 +32,4 @@ const UserSearch: React.FC = () => {
     )
 }
 
-export default UserSearch;
+export default UserSearchWithRef;
