@@ -3,7 +3,12 @@ import React from 'react';
 
 const GuestList: React.FC = () => {
   return (
-    <div>GuestList</div>
+    <>
+        <h3>Guest List</h3>
+        <input type="text" />
+
+        <button>Add Guest</button>
+    </>
   )
 }
 
