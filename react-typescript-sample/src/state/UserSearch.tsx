@@ -11,7 +11,11 @@ const UserSearch: React.FC = () => {
     const [name, setName] = useState<string>('');
 
     return (
-    <div>UserSearch</div>
+    <div>
+        User Search
+        <input type="text"  value={name} onChange={(e) => setName(e.target.value)} />
+        <button onClick={onClick}>Search</button>
+    </div>
     )
 }
 
