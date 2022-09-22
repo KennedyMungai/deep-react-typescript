@@ -6,7 +6,8 @@ import UserSearch from "./state/UserSearch";
 const App = () => {
   return (
     <div>
-      <GuestList />
+      {/* <GuestList /> */}
+      <UserSearch />
     </div>
   )
 }
