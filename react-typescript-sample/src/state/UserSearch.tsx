@@ -8,9 +8,11 @@ const users = [
 ];
 
 const UserSearch: React.FC = () => {
-  return (
+    const [name, setName] = useState<string>('');
+
+    return (
     <div>UserSearch</div>
-  )
+    )
 }
 
 export default UserSearch;
