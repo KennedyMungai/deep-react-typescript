@@ -2,7 +2,7 @@ import React from 'react';
 
 
 const EventComponent: React.FC = () => {
-    const onChange = (e) => {
+    const onChange = (e: React.ChangeEvent) => {
         console.log(e);
     }
         
