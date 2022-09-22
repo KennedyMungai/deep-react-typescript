@@ -12,6 +12,11 @@ const UserSearchWithRef: React.FC = () => {
     const [user, setUser] = useState<{name: string, age: number} | undefined>();
     const inputRef = useRef<HTMLInputElement | null >(null);
 
+    useEffect(() => {
+        inputRef.current?.focus();
+    }, []);
+    
+
     const onClick = () => {
         const foundUser = users.find((user) => {
             return user.name === name;
