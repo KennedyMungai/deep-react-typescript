@@ -25,8 +25,7 @@ const UserSearch: React.FC = () => {
         <input type="text"  value={name} onChange={(e) => setName(e.target.value)} />
         <button onClick={onClick}>Search</button>
         <div className="">
-            {user && user.name}
-            {user && user.age}
+            <p>{user && user.name} is {user && user.age}</p>
         </div>
     </div>
     )
