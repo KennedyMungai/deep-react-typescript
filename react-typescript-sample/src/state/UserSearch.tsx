@@ -10,6 +10,10 @@ const users = [
 const UserSearch: React.FC = () => {
     const [name, setName] = useState<string>('');
 
+    const onClick = () => {
+        
+    };
+
     return (
     <div>
         User Search
